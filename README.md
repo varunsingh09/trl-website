@@ -13,7 +13,7 @@
 
 ## Getting started
 ```bash
-$ git clone https://github.com/mirchenko/react-ssr.git <YOUR_FOLDER_NAME>
+$ git clone https://github.com/varunsingh09/react-ssr-redux-react.git <YOUR_FOLDER_NAME>
 $ cd <YOUR_FOLDER_NAME>
 $ yarn 
 $ yarn build
