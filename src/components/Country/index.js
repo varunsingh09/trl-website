@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchCountries, fetchCountry } from "../../action/countries";
+import {  fetchCountry } from "../../action/countries";
 import { Loading } from "../../common";
 
 const m = ({ country }) => ({ country });
 
-@connect(m, { fetchCountry })
-export default class Country extends Component {
+class Country extends Component {
 
-  static fetching ({ dispatch, path }) {
-    return [dispatch(fetchCountry(path.substr(1)))];
-  }
+  // static fetching ({ dispatch, path }) {
+  //   return [dispatch(fetchCountry(path.substr(1)))];
+  // }
 
   componentDidMount() {
     this.props.fetchCountry(this.props.match.params.name);
@@ -61,3 +60,5 @@ export default class Country extends Component {
     );
   }
 }
+
+export default connect(m, { fetchCountry })(Country)

@@ -1,5 +1,4 @@
 import express from 'express';
-import { renderToString } from 'react-dom/server';
 import { matchRoutes } from 'react-router-config';
 import render from './render';
 import store from '../src/store';
@@ -28,4 +27,4 @@ app.get('*', async (req, res) => {
   res.send(content);
 });
 
-app.listen(PORT, () => console.log(`Frontend service listening on port: ${PORT}`));
+app.listen(PORT, () => console.log(`Frontend service listening on port: http://localhost:${PORT}`));
