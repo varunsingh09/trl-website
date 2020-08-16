@@ -5,7 +5,10 @@ import {
   REQUEST_COUNTRIES,
   RECEIVE_COUNTRIES,
   REQUEST_COUNTRY,
-  RECEIVE_COUNTRY
+  RECEIVE_COUNTRY,
+  REQUEST_EU_COUNTRIES,
+  RECEIVE_EU_COUNTRIES,
+  
 } from "./types";
 
 
@@ -29,5 +32,17 @@ export const fetchCountry = name => async dispatch => {
   } catch(e) {
       console.log(e);
     dispatch({ type: RECEIVE_COUNTRY, payload: {} });
+  }
+};
+
+export const fetchCountriesEu = () => async dispatch => {
+  console.log('fetchCountriesEu')
+  try {
+    dispatch({ type: REQUEST_EU_COUNTRIES });
+    const res = await axios.get(`${ROOT}/regionalbloc/eu`);
+    dispatch({ type: RECEIVE_EU_COUNTRIES, payload: res.data });
+  } catch(e) {
+    console.log(e);
+    dispatch({ type: RECEIVE_EU_COUNTRIES, payload: [] });
   }
 };

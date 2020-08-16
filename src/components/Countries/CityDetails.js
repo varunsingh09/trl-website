@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchCountries } from "../../action/countries";
+import { fetchCountriesEu } from "../../action/countries";
 import { Loading } from '../../common';
 import CountriesItem from './CountriesItem';
 
 const m = ({ countries }) => ({ countries });
 
-
-class Countries extends Component {
+class CityDetails extends Component {
 
   static fetching ({ dispatch }) {
-    return [dispatch(fetchCountries())];
+    return [dispatch(fetchCountriesEu())];
   }
 
   componentDidMount() {
-    this.props.fetchCountries();
+    this.props.fetchCountriesEu();
   }
 
 
@@ -36,4 +35,4 @@ class Countries extends Component {
 };
 
 
-export default connect(m, { fetchCountries })(Countries)
+export default connect(m, { fetchCountriesEu })(CityDetails)

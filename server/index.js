@@ -3,6 +3,7 @@ import { matchRoutes } from 'react-router-config';
 import render from './render';
 import store from '../src/store';
 import Routes from '../src/router/Routes';
+const path = require('path');
 
 
 const PORT = process.env.PORT || 8079;

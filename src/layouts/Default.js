@@ -5,11 +5,11 @@ export default ({ children }) => {
 
 	document.body.classList.add('bg-dark')
 
-	console.log("render Main layout")
+	console.log("render default layout")
 
 	return (
 		<div>
-			<Link to="/cityDetails">Home</Link>
+			<Link to="/admin/cityDetails">Home</Link>
 			{children}
 		</div>
 	)
