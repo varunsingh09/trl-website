@@ -23,12 +23,11 @@ export default (pathname, store, context) => {
         <title>Title</title>
       </head>
       <body>
-      
       <div id="app">${content}</div>
       <script>
         window.INITIAL_STATE = ${JSON.stringify(store.getState())}
       </script>
-      <script src="dist/bundle.js"></script>
+      <script src="./../dist/bundle.js"></script>
       </body>
       </html>
   `;

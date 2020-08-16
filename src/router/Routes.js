@@ -10,7 +10,7 @@ export default [
     exact: true
   },
     {
-    path: '/cityDetails',
+    path: '/admin/cityDetails',
     component: CityDetails,
     exact: true
   },

@@ -9,7 +9,7 @@ export default ({ children }) => {
 
 	return (
 		<div>
-			<Link to="/cityDetails">Home</Link>
+			<Link to="/admin/cityDetails">EU Country List</Link>
 			{children}
 		</div>
 	)
