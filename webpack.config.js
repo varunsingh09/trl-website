@@ -10,7 +10,7 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname),
     compress: true,
-    port: 8080,
+    port: 2025,
     historyApiFallback: true
   },
   module: {
@@ -26,6 +26,14 @@ module.exports = {
           { loader: 'style-loader' },
           { loader: 'css-loader' },
           { loader: 'sass-loader' },
+        ]
+      },
+      {
+        test: /\.css$/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'file-loader' },
+          { loader: 'css-loader' },
         ]
       }
     ]
