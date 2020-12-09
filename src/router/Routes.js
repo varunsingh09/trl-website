@@ -1,7 +1,5 @@
 import Home from "../components/Home";
-import Countries from "../components/Countries";
-import Country from "../components/Country";
-import CityDetails from "../components/Countries/CityDetails";
+import ArticleDetails from "../components/Home/ArticleDetails";
 
 
 export default [
@@ -11,19 +9,10 @@ export default [
     exact: true
   },
   {
-    path: '/countries',
-    component: Countries,
+    path: '/:category/:title/:Id',
+    component: ArticleDetails,
     exact: true
   },
-  {
-    path: '/admin/cityDetails',
-    component: CityDetails,
-    exact: true
-  },
-  {
-    path: '/:name',
-    component: Country,
-    exact: true
-  },
+
 
 ];

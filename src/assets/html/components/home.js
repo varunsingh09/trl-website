@@ -98,10 +98,7 @@ class home extends React.Component {
                       </div>
                     </div>
                     <ins
-                      className="adsbygoogle"
-                      style={{
-                        display: "block"
-                      }}
+               
                       data-ad-format="fluid"
                       data-ad-layout-key="-gk+4m+28-bb+c5"
                       data-ad-client="ca-pub-9146473421633718"
@@ -111,10 +108,7 @@ class home extends React.Component {
                     <br />
                     <div id="load_data_messageindex" align="center" />
                     <ins
-                      className="adsbygoogle"
-                      style={{
-                        display: "block"
-                      }}
+              
                       data-ad-format="fluid"
                       data-ad-layout-key="-gk+4m+28-bb+c5"
                       data-ad-client="ca-pub-9146473421633718"
@@ -132,10 +126,7 @@ class home extends React.Component {
                 <div className="sidebar-widget-area">
                   {}
                   <ins
-                    className="adsbygoogle"
-                    style={{
-                      display: "block"
-                    }}
+                 
                     data-ad-client="ca-pub-9146473421633718"
                     data-ad-slot={7398644801}
                     data-ad-format="auto"
@@ -143,10 +134,7 @@ class home extends React.Component {
                   />
                   {}
                   <ins
-                    className="adsbygoogle"
-                    style={{
-                      display: "block"
-                    }}
+           
                     data-ad-client="ca-pub-9146473421633718"
                     data-ad-slot={7398644801}
                     data-ad-format="auto"
@@ -154,10 +142,7 @@ class home extends React.Component {
                   />
                   {}
                   <ins
-                    className="adsbygoogle"
-                    style={{
-                      display: "block"
-                    }}
+               
                     data-ad-client="ca-pub-9146473421633718"
                     data-ad-slot={7398644801}
                     data-ad-format="auto"
@@ -165,10 +150,7 @@ class home extends React.Component {
                   />
                   {}
                   <ins
-                    className="adsbygoogle"
-                    style={{
-                      display: "block"
-                    }}
+          
                     data-ad-client="ca-pub-9146473421633718"
                     data-ad-slot={7398644801}
                     data-ad-format="auto"
@@ -176,10 +158,7 @@ class home extends React.Component {
                   />
                   {}
                   <ins
-                    className="adsbygoogle"
-                    style={{
-                      display: "block"
-                    }}
+
                     data-ad-client="ca-pub-9146473421633718"
                     data-ad-slot={7398644801}
                     data-ad-format="auto"
@@ -187,10 +166,7 @@ class home extends React.Component {
                   />
                   {}
                   <ins
-                    className="adsbygoogle"
-                    style={{
-                      display: "block"
-                    }}
+
                     data-ad-client="ca-pub-9146473421633718"
                     data-ad-slot={4772481466}
                     data-ad-format="auto"

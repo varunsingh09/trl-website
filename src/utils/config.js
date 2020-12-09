@@ -44,3 +44,5 @@ export const navigation = [
     { "label": `निबंधन और शर्तें`, link: "" },
     { "label": `गोपनीयता नीति`, link: "" }
 ]
+
+export const AD_FLAG=false
