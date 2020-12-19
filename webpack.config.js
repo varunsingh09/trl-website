@@ -8,11 +8,12 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
-    host: "13.233.191.8",
+    //host:"",
     contentBase: path.join(__dirname),
     compress: true,
     port: 2025,
-    historyApiFallback: true
+    historyApiFallback: true,
+    open: true,
   },
   module: {
     rules: [

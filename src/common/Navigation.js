@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import Dropdown from 'react-bootstrap/Dropdown'
 import { navigation } from "./../utils/config"
 const Navigation = () => {
@@ -20,18 +21,13 @@ const Navigation = () => {
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
                           {nav.children.map((subnav, index) => {
-                            return <Dropdown.Item href="#/action-1" key={index}>{subnav.label}</Dropdown.Item>
+                            return <Dropdown.Item key={index} href={subnav.link}>{subnav.label}</Dropdown.Item>
                           })}
                         </Dropdown.Menu>
                       </Dropdown>
                     } else {
                       return <li className="nav-item" key={index}>
-                        <a className="nav-link"
-                          href="https://trlnews.com/Home"
-                        >
-                          {nav.label}
-
-                        </a>
+                        <Link className="nav-link" to={`${nav.link}`}>{nav.label}</Link>
                       </li>
 
                     }

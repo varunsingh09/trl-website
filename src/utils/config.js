@@ -1,48 +1,48 @@
 export const navigation = [
-    { "label": `होम`, link: "" },
-    { "label": `विश्व`, link: "" },
+    { "label": `होम`, link: "/" },
+    { "label": `विश्व`, link: "/world" },
     {
         "label": `राज्य`, link: "", children: [
-            { "label": `बिहार`, link: "" },
-            { "label": `छत्तीसगढ़`, link: "" },
-            { "label": `गुजरात`, link: "" },
-            { "label": `हिमाचल प्रदेश`, link: "" },
-            { "label": `हरियाणा`, link: "" },
-            { "label": `जम्मू कश्मीर`, link: "" },
-            { "label": `झारखण्ड`, link: "" },
-            { "label": `मध्य प्रदेश`, link: "" },
-            { "label": `महाराष्ट्र`, link: "" },
-            { "label": `पंजाब`, link: "" },
-            { "label": `राजस्थान`, link: "" },
-            { "label": `उत्तर प्रदेश`, link: "" },
-            { "label": `उत्तराखण्ड`, link: "" },
-            { "label": `अन्य राज्य`, link: "" }
+            { "label": `बिहार`, link: "/Bihar" },
+            { "label": `छत्तीसगढ़`, link: "/Chhattisgarh" },
+            { "label": `गुजरात`, link: "/Gujarat" },
+            { "label": `हिमाचल प्रदेश`, link: "Himachal Pradesh" },
+            { "label": `हरियाणा`, link: "/Haryana" },
+            { "label": `जम्मू कश्मीर`, link: "/Jammu" },
+            { "label": `झारखण्ड`, link: "/Jharkhand" },
+            { "label": `मध्य प्रदेश`, link: "/Madhya Pradesh" },
+            { "label": `महाराष्ट्र`, link: "/Maharashtra" },
+            { "label": `पंजाब`, link: "/Punjab" },
+            { "label": `राजस्थान`, link: "/Rajasthan" },
+            { "label": `उत्तर प्रदेश`, link: "/Uttar Pradesh" },
+            { "label": `उत्तराखण्ड`, link: "/Uttarakhand" },
+            { "label": `अन्य राज्य`, link: "/OtherStates" }
         ]
     },
     {
-        "label": `आपका शहर`, link: "", children: [
-            { "label": `पठानकोट`, link: "" },
-            { "label": `गुरदासपुर`, link: "" }
+        "label": `आपका शहर`, link: "/city", children: [
+            { "label": `पठानकोट`, link: "/Pathankot" },
+            { "label": `गुरदासपुर`, link: "/Gurdaspur" }
         ]
     },
-    { "label": `राजनीती`, link: "" },
+    { "label": `राजनीती`, link: "/Politics" },
     {
-        "label": `खेल`, link: "", children: [
-            { "label": `क्रिकेट`, link: "" },
-            { "label": `फुटबॉल`, link: "" },
-            { "label": `अन्य खेल`, link: "" }
+        "label": `खेल`, link: "/Sports", children: [
+            { "label": `क्रिकेट`, link: "/Cricket" },
+            { "label": `फुटबॉल`, link: "/Football" },
+            { "label": `अन्य खेल`, link: "/othersports" }
         ]
     },
-    { "label": `टेक्नोलॉजी`, link: "" },
-    { "label": `मनोरंजन`, link: "" },
-    { "label": `बिज़नेस`, link: "" },
-    { "label": `शिक्षा`, link: "" },
-    { "label": `स्टार्टअप्स`, link: "" },
-    { "label": `लाइफस्टाइल`, link: "" },
-    { "label": `नौकरी`, link: "" },
-    { "label": `कृषि`, link: "" },
-    { "label": `निबंधन और शर्तें`, link: "" },
-    { "label": `गोपनीयता नीति`, link: "" }
+    { "label": `टेक्नोलॉजी`, link: "/Technology" },
+    { "label": `मनोरंजन`, link: "/Entertainment" },
+    { "label": `बिज़नेस`, link: "/Business" },
+    { "label": `शिक्षा`, link: "/Education" },
+    { "label": `स्टार्टअप्स`, link: "/Startups" },
+    { "label": `लाइफस्टाइल`, link: "/Lifestyle" },
+    { "label": `नौकरी`, link: "/Jobs" },
+    { "label": `कृषि`, link: "/Agriculture" },
+    { "label": `निबंधन और शर्तें`, link: "TermsCondition" },
+    { "label": `गोपनीयता नीति`, link: "/PrivacyPolicy" }
 ]
 
-export const AD_FLAG=false
+export const AD_FLAG = false
