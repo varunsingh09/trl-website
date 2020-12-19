@@ -8,7 +8,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
-    host: "ec2-13-233-191-8.ap-south-1.compute.amazonaws.com",
+    // host: "ec2-13-233-191-8.ap-south-1.compute.amazonaws.com",
     contentBase: path.join(__dirname),
     compress: true,
     port: 2025,

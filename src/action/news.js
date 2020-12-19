@@ -14,7 +14,9 @@ export const fetchHomePageNews = (category) => async dispatch => {
     try {
         dispatch({ type: REQUEST_NEWS });
         const res = await axios.get(`${FETCH_HOME_PAGE_NEWS}`, {
-            category: category
+            params: {
+                category: category
+            }
         }, {
             headers: CONTENT_TYPE_DEFAULT,
         })

@@ -15,7 +15,7 @@ const Category = ({ ...props }) => {
 
     useEffect(() => {
         dispatch(fetchHomePageNews(categoryId))
-    }, [])
+    }, [categoryId])
 
     const { news, isFetching } = useSelector((state) => state.news);
 
